@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import error from '../images/logo-404.svg';
+import error from '../../images/logo-404.svg';
 
 const Enquiry = props => {
 

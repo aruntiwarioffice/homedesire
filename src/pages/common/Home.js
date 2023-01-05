@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import image1 from '../images/slider/slider2-home2.jpg';
-import image2 from '../images/slider/slider2-home1-1.jpg';
-import image3 from '../images/slider/slider1-home2.jpg';
-import aboutImage from '../images/image1-home3.png';
-import aboutimage2 from '../images/image1-aboutus.png';
-import service1 from '../images/cate1.jpg';
-import service2 from '../images/cate2.jpg';
-import service3 from '../images/cate3.jpg';
-import home2 from '../images/image3-home1.png';
+import image1 from '../../images/slider/slider2-home2.jpg';
+import image2 from '../../images/slider/slider2-home1-1.jpg';
+import image3 from '../../images/slider/slider1-home2.jpg';
+import aboutImage from '../../images/image1-home3.png';
+import aboutimage2 from '../../images/image1-aboutus.png';
+import service1 from '../../images/cate1.jpg';
+import service2 from '../../images/cate2.jpg';
+import service3 from '../../images/cate3.jpg';
+import home2 from '../../images/image3-home1.png';
 
 
 const Home = () => {

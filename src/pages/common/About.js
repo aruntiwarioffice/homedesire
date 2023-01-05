@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import aboutimage from '../images/image1-aboutus.png';
+import aboutimage from '../../images/image1-aboutus.png';
 
 
 const About = props => {
