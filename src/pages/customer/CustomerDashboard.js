@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const Dashboard = props => {
+const CustomerDashboard = props => {
 
     useEffect(() => {
         document.title = "Dashboard";
@@ -154,4 +154,4 @@ const Dashboard = props => {
     );
 };
 
-export default Dashboard;
+export default CustomerDashboard;
