@@ -1,7 +1,13 @@
-import StartingPageContent from '../../components/StartingPage/StartingPageContent';
+import React, { useEffect } from 'react';
+
+import HomeContent from '../../components/common/content/Home/Content';
 
 const HomePage = () => {
-  return <StartingPageContent />;
+  useEffect(() => {
+    document.title = "Home";
+  }, []);
+
+  return <HomeContent />;
 };
 
 export default HomePage;
