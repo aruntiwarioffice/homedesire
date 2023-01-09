@@ -11,12 +11,16 @@ const Layout = (props) => {
   return (
     <Fragment>
       {!isLoggedIn && (
-        <CommonLayout />
+        <CommonLayout>
+          <main>{props.children}</main>
+        </CommonLayout>
       )}
       {isLoggedIn && (
-        <DashboardLayout />
+        <DashboardLayout>
+          <main>{props.children}</main>
+        </DashboardLayout>
       )}
-      <main>{props.children}</main>
+
     </Fragment>
   );
 };
