@@ -4,7 +4,7 @@ import ContactUsContent from '../../components/common/content/ContactUs/Content'
 
 const ContactUs = () => {
   useEffect(() => {
-    document.title = "About Us";
+    document.title = "Contact Us";
   }, []);
 
   return <ContactUsContent />;

@@ -1,20 +1,22 @@
 import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FiAlignRight, FiXCircle, FiChevronDown } from "react-icons/fi";
 
+import classes from './Header.module.css';
 import AuthContext from '../../../../resources/auth-context';
-import './Style.css';
 import logo from './images/logo.png';
 
 
 const Header = () => {
    const authCtx = useContext(AuthContext);
 
-  const isLoggedIn = authCtx.isLoggedIn;
+   const isLoggedIn = authCtx.isLoggedIn;
+   const userType = authCtx.userType;
+   const currentUrl = window.location.pathname;
+   console.log('currentUrl ' + currentUrl);
 
-  const logoutHandler = () => {
-    authCtx.logout();
-  };
+   const logoutHandler = () => {
+      authCtx.logout();
+   };
 
    const [isMenu, setisMenu] = useState(false);
    const [isResponsiveclose, setResponsiveclose] = useState(false);
@@ -39,53 +41,43 @@ const Header = () => {
       boxClassSubMenu.push('');
    }
    return (
-      <>
-         <header className="site-header-onepage bg-dark-1 is-fixed-">
-            <div className="octf-main-header">
-               <div className="octf-area-wrap">
-                  <div className="container octf-mainbar-container">
-                     <div className="octf-mainbar">
-                        <div className="octf-mainbar-row octf-row">
-                           <div className="octf-col logo-col">
-                              <div id="site-logo" className="site-logo">
-                                 <Link exact activeClassName='is-active' to="/">
-                                    <img src={logo} alt="All Home Desire" className="logo-onepage" />
-                                 </Link>
-                              </div>
-                           </div>
-                           <div className="octf-col menu-col no-padding">
-                              <nav className="main-nav " >
-                                 {isResponsiveclose === true ? <>
-                                    <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} >
-                                       <FiXCircle />
-                                    </span>
-                                 </> : <>
-                                    <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} >
-                                       <FiAlignRight />
-                                    </span>
-                                 </>}
-                                 {isLoggedIn && (
-                                 <ul className={boxClass.join(' ')}>
-                                    <li className="menu-item" >
-                                       <Link exact activeClassName='is-active' onClick={toggleClass} to={'/'}> Dashboard </Link>
-                                    </li>
-                                    <li className="menu-item " >
-                                       <Link onClick={toggleClass} activeClassName='is-active' to={'/profile'}> Profile </Link>
-                                    </li>
-                                    <li className="menu-item ">
-                                       <Link onClick={logoutHandler} activeClassName='is-active' to={'/logout'}> Logout </Link>
-                                    </li>
-                                 </ul>
-                                 )}
-                              </nav>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+         <header className={classes.header}>
+            <Link exact className={classes.logo} to="/">
+               <img src={logo} alt="All Home Desire" className={classes.logoOnPage} />
+            </Link>
+            {(userType != 'Employee') & isLoggedIn && (
+               <div className={classes.headerRight}>
+                  <Link exact className={(currentUrl==='/') && (classes.active) } onClick={toggleClass} to={'/'}> Dashboard </Link>
+
+                  <Link onClick={toggleClass} className={(currentUrl==='/') && (classes.active)} to={'/property'}> Property </Link>
+
+                  <Link onClick={toggleClass} className={(currentUrl==='/') && (classes.active)} to={'/profile'}> Profile </Link>
+
+                  <Link onClick={logoutHandler} className={(currentUrl==='/') && (classes.active)} to={'/logout'}> Logout </Link>
                </div>
-            </div>
+            )}
+            {(userType === 'Employee') & isLoggedIn && (
+               <div className={classes.headerRight}>
+                  <Link exact className={(currentUrl==='/') && (classes.active)} onClick={toggleClass} to={'/'}> Dashboard </Link>
+
+                  <Link onClick={toggleClass} className={(currentUrl==='/property') && (classes.active)} to={'/property'}> Property </Link>
+
+                  <Link onClick={toggleClass} className={(currentUrl==='/services') && (classes.active)} to={'/services'}> Services </Link>
+
+                  <Link onClick={toggleClass} className={(currentUrl==='/users') && (classes.active)} to={'/users'}> Users </Link>
+
+                  <Link onClick={toggleClass} className={(currentUrl==='/paymentmethods') && (classes.active)} to={'/paymentmethods'}> Payment Methods </Link>
+
+                  <Link onClick={toggleClass} className={(currentUrl==='/subscriptionmethods') && (classes.active)} to={'/subscriptionmethods'}> Subscription Methods </Link>
+
+                  <Link onClick={toggleClass} className={(currentUrl==='/reports') && (classes.active)} to={'/reports'}> Reports </Link>
+
+                  <Link onClick={toggleClass} className={(currentUrl==='/profile') && (classes.active)} to={'/profile'}> Profile </Link>
+
+                  <Link onClick={logoutHandler} className={(currentUrl==='/logout') && (classes.active)} to={'/logout'}> Logout </Link>
+               </div>
+            )}
          </header>
-      </>
    )
 }
 export default Header

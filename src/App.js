@@ -5,13 +5,22 @@ import './components/common/css/App.css';
 import './components/common/css/Style.css';
 import Layout from './components/Layout/Layout';
 import Error from "./pages/common/Error";
-import ProfilePage from './pages/dashboard/ProfilePage';
-import AuthPage from './pages/common/AuthPage';
+
 import HomePage from './pages/common/HomePage';
 import AboutUs from './pages/common/AboutUs';
 import Property from './pages/common/Property';
 import InteriorDesign from './pages/common/InteriorDesign';
 import ContactUs from './pages/common/ContactUs';
+import AuthPage from './pages/common/AuthPage';
+
+import Dashboard from './pages/dashboard/Dashboard';
+import ProfilePage from './pages/dashboard/ProfilePage';
+import PaymentMethods from './pages/dashboard/PaymentMethods';
+import AuthProperty from './pages/dashboard/Property';
+import Reports from './pages/dashboard/Reports';
+import Services from './pages/dashboard/Services';
+import SubscriptionMethods from './pages/dashboard/SubscriptionMethods';
+import Users from './pages/dashboard/Users';
 
 import AuthContext from './resources/auth-context';
 
@@ -35,7 +44,13 @@ function App() {
       )}
       {authCtx.isLoggedIn && (
       <Routes>
-        <Route exact path='/' element={<ProfilePage />} />
+        <Route exact path='/' element={<Dashboard />} />
+        <Route exact path='/property' element={<AuthProperty />} />
+        <Route exact path='/services' element={<Services />} />
+        <Route exact path='/users' element={<Users />} />
+        <Route exact path='/paymentmethods' element={<PaymentMethods />} />
+        <Route exact path='/subscriptionmethods' element={<SubscriptionMethods />} />
+        <Route exact path='/reports' element={<Reports />} />
         <Route exact path='/profile' element={<ProfilePage />} />
         <Route path="*" element={<Error />} />
       </Routes>

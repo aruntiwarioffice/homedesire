@@ -1,13 +1,13 @@
 import ChangePassword from './ChangePassword/Content';
 import classes from './Content.module.css';
 
-const Profile = () => {
+const CustomerProfile = () => {
   return (
     <section className={classes.profile}>
-      <h1>Your User Profile</h1>
+      <h1>Customer Profile</h1>
       <ChangePassword />
     </section>
   );
 };
 
-export default Profile;
+export default CustomerProfile;
