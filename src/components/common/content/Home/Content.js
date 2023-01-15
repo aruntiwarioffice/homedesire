@@ -17,17 +17,18 @@ const HomeContent = () => {
             <div className="homeslider">
 
                 <div id="demo" className="carousel slide" data-ride="carousel">
-                    <ul className="carousel-indicators">
+                    {/* <ul className="carousel-indicators">
                         <li data-target="#demo" data-slide-to="0" className="active"></li>
                         <li data-target="#demo" data-slide-to="1"></li>
                         <li data-target="#demo" data-slide-to="2"></li>
-                    </ul>
+                    </ul> */}
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <img src={image1} alt="Los Angeles" />
                             <div className="carousel-caption">
-                                <h3>Shaurbh</h3>
-                                <p>We had such a great time in LA!</p>
+                                <h3>Find Your Best Property </h3>
+                                <p>Need a perfect place to live right now? Here's the best offer for you! Amazing house with the most comfort layout is fully equipped with everything needed. 
+							</p>
                             </div>
                         </div>
                         <div className="carousel-item">

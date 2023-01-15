@@ -11,6 +11,7 @@ import HomePage from './pages/common/HomePage';
 import AboutUs from './pages/common/AboutUs';
 import Property from './pages/common/Property';
 import Search from './pages/common/Search';
+import EnquiryNow from './pages/common/EnquiryNow';
 import PartnerRegister from './pages/common/PartnerRegister';
 import InteriorDesign from './pages/common/InteriorDesign';
 import ContactUs from './pages/common/ContactUs';
@@ -31,6 +32,7 @@ function App() {
         <Route exact path='/services/interiordesign' element={<InteriorDesign />} />
         <Route exact path='/contact-us' element={<ContactUs />} />
         <Route exact path='/search' element={<Search />} />
+        <Route exact path='/enquiry-now' element={<EnquiryNow />} />
         <Route exact path='/partner-register' element={<PartnerRegister />} />
         <Route exact path='/login' element={<AuthPage />} />
         <Route exact path="/logout" element={<Navigate to="/" replace />}/>
