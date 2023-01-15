@@ -1206,6 +1206,7 @@ select {
   background: #fff;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 0px;
 }
 
 textarea {
@@ -6105,7 +6106,8 @@ object {
   margin-bottom: 24px;
 }
 .wpcf7 .main-form input,
-.wpcf7 .main-form textarea {
+.wpcf7 .main-form textarea,
+.wpcf7 .main-form select {
   width: 100%;
   background: #fff;
 }
@@ -8521,6 +8523,36 @@ ul.style-default li:last-child, ol.style-default li:last-child {
     background-size: cover;
     padding-top: 105px;
     padding-bottom: 120px;
+}
+.portfoliobg{
+  background-image: url(images/bg/Untitled-design-8.png) !important;
+}
+.search-page{
+   background-image: url(images/bg/Untitled-design-2.jpg) !important;
+}
+.partner-page{
+  background-image: url(images/bg/Untitled-design-1.jpg) !important;
+}
+.line-style {
+  border-bottom: 4px solid #ff9200;
+  margin-bottom: 20px;
+}
+.line-style h3{
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+.bg-black{
+  background:#000;
+}
+.elementor-background-overlay {
+  background-color: #000000;
+  opacity: 0.85;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 .ot-heading.s-light:before {
     border-color: #FFF;
