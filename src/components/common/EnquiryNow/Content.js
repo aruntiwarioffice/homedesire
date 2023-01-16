@@ -1,7 +1,7 @@
 import classes from './Content.module.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import featured2 from '../../css/images/Untitled-design-6.png';
+import featured2 from '../Style/images/Untitled-design-6.png';
 const InteriorDesignContent = () => {
   return (
     <section className={classes}>

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import PartnerRegisterContent from '../../components/common/content/PartnerRegister/Content';
+import PartnerRegisterContent from '../../components/common/PartnerRegister/Content';
 
 const PartnerRegister = () => {
   useEffect(() => {

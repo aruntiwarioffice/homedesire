@@ -7,6 +7,10 @@ const RegisterForm = () => {
   const history = useNavigate();
   const emailInputRef = useRef();
   const passwordInputRef = useRef();
+  const rePasswordInputRef = useRef();
+  const companyNameInputRef = useRef();
+  const businessTypeInputRef = useRef();
+  
 
   const [isLoading, setIsLoading] = useState(false);
 
@@ -58,8 +62,8 @@ const RegisterForm = () => {
             required
             ref={rePasswordInputRef}
           />
-          </div>
-          <div className={classes.control}>
+        </div>
+        <div className={classes.control}>
           <label htmlFor='companyName'>Comapay Name</label>
           <input
             type='text'
@@ -67,8 +71,8 @@ const RegisterForm = () => {
             required
             ref={companyNameInputRef}
           />
-          </div>
-          <div className={classes.control}>
+        </div>
+        <div className={classes.control}>
           <label htmlFor='businessType'>Business Type</label>
           <input
             type='text'
@@ -76,8 +80,8 @@ const RegisterForm = () => {
             required
             ref={businessTypeInputRef}
           />
-          </div>
-          <div className={classes.control}>
+        </div>
+        <div className={classes.control}>
           <label htmlFor='c'>City</label>
           <input
             type='password'
@@ -85,8 +89,8 @@ const RegisterForm = () => {
             required
             ref={rePasswordInputRef}
           />
-          </div>
-          <div className={classes.control}>
+        </div>
+        <div className={classes.control}>
           <label htmlFor='password'>Re-Password</label>
           <input
             type='password'
@@ -94,8 +98,8 @@ const RegisterForm = () => {
             required
             ref={rePasswordInputRef}
           />
-          </div>
-          <div className={classes.control}>
+        </div>
+        <div className={classes.control}>
           <label htmlFor='password'>Re-Password</label>
           <input
             type='password'
@@ -103,8 +107,8 @@ const RegisterForm = () => {
             required
             ref={rePasswordInputRef}
           />
-          </div>
-          <div className={classes.control}>
+        </div>
+        <div className={classes.control}>
           <label htmlFor='password'>Re-Password</label>
           <input
             type='password'
