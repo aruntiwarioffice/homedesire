@@ -12,10 +12,6 @@ const Header = () => {
 
   const isLoggedIn = authCtx.isLoggedIn;
 
-  const logoutHandler = () => {
-    authCtx.logout();
-  };
-
    const [isMenu, setisMenu] = useState(false);
    const [isResponsiveclose, setResponsiveclose] = useState(false);
    const toggleClass = () => {
@@ -91,9 +87,22 @@ const Header = () => {
                                     </li>
                                     
                                     <li className="menu-item ">
-                                       <Link onClick={toggleClass} activeClassName='is-active' to={'/login'}> LOGIN </Link>
+                                       <Link onClick={toggleClass} activeClassName='is-active' to={'/auth'}> LOGIN </Link>
                                     </li>
-                                    
+                                    <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" >
+                                       <Link to="javascript:void()">
+                                       Join Us
+                                       <FiChevronDown />
+                                       </Link>
+                                       <ul className={boxClassSubMenu.join(' ')} >
+                                          <li>
+                                             <Link onClick={toggleClass} activeClassName='is-active' to={'/login'}> LOGIN </Link>
+                                          </li>
+                                          <li>
+                                             <Link onClick={toggleClass} activeClassName='is-active' to={'/register'}> REGISTER WITH US </Link>
+                                          </li>
+                                       </ul>
+                                    </li>
                                  </ul>
                                  )}
                               </nav>

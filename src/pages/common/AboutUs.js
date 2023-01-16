@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import AboutUsContent from '../../components/common/content/AboutUs/Content';
+import AboutUsContent from '../../components/common/AboutUs/Content';
 
 const AboutUs = () => {
   useEffect(() => {

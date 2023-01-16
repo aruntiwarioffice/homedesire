@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './components/common/css/index.css';
+import './components/common/Style/index.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.js';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 import { BrowserRouter } from 'react-router-dom';

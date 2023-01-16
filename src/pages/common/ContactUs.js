@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import ContactUsContent from '../../components/common/content/ContactUs/Content';
+import ContactUsContent from '../../components/common/ContactUs/Content';
 
 const ContactUs = () => {
   useEffect(() => {

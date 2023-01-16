@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import HomeContent from '../../components/common/content/Home/Content';
+import HomeContent from '../../components/common/Home/Content';
 
 const HomePage = () => {
   useEffect(() => {

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import InteriorDesignContent from '../../components/common/content/Services/InteriorDesign/Content';
+import InteriorDesignContent from '../../components/common/Services/InteriorDesign/Content';
 
 const InteriorDesign = () => {
   useEffect(() => {
