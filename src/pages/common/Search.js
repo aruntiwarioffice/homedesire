@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import SearchPgaeContent from '../../components/common/content/Search/Content';
+import SearchPgaeContent from '../../components/common/Search/Content';
 
 const SearchPgae = () => {
   useEffect(() => {

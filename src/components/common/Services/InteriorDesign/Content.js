@@ -1,14 +1,14 @@
 import classes from './Content.module.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import aboutimage from '../../../css/images/page-header/pheader-single-portfolio.jpg';
-import featured1 from '../../../css/images/Untitled-design-5.png';
-import featured2 from '../../../css/images/Untitled-design-6.png';
-import featured3 from '../../../css/images/Untitled-design-7.png';
-import table from '../../../css/images/Untitled-design-9.png';
-import table2 from '../../../css/images/Untitled-design-14.png';
-import hand from '../../../css/images/Untitled-design-13.png';
-import hand2 from '../../../css/images/Untitled-design-11.png';
+import aboutimage from '../../Style/images/page-header/pheader-single-portfolio.jpg';
+import featured1 from '../../Style/images/Untitled-design-5.png';
+import featured2 from '../../Style/images/Untitled-design-6.png';
+import featured3 from '../../Style/images/Untitled-design-7.png';
+import table from '../../Style/images/Untitled-design-9.png';
+import table2 from '../../Style/images/Untitled-design-14.png';
+import hand from '../../Style/images/Untitled-design-13.png';
+import hand2 from '../../Style/images/Untitled-design-11.png';
 const InteriorDesignContent = () => {
   return (
     <section className={classes}>

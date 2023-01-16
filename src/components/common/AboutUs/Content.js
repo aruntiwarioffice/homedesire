@@ -1,9 +1,9 @@
 import classes from './Content.module.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import aboutimage from '../../css/images/Untitled-design-3.png';
-import whychooseus from '../../css/images/Untitled-design-2.png';
-import chooseimage from '../../css/images/Untitled-design-4.png';
+import aboutimage from '../../Style/images/Untitled-design-3.png';
+import whychooseus from '../../Style/images/Untitled-design-2.png';
+import chooseimage from '../../Style/images/Untitled-design-4.png';
 const AboutUsContent = () => {
   return (
     <section className={classes.starting}>
