@@ -9,6 +9,9 @@ import Error from "./pages/common/Error";
 import HomePage from './pages/common/HomePage';
 import AboutUs from './pages/common/AboutUs';
 import Property from './pages/common/Property';
+import Search from './pages/common/Search';
+import EnquiryNow from './pages/common/EnquiryNow';
+import PartnerRegister from './pages/common/PartnerRegister';
 import InteriorDesign from './pages/common/InteriorDesign';
 import ContactUs from './pages/common/ContactUs';
 import AuthPage from './pages/common/AuthPage';
@@ -40,6 +43,9 @@ function App() {
         <Route exact path='/services' element={<InteriorDesign />} />
         <Route exact path='/services/interiordesign' element={<InteriorDesign />} />
         <Route exact path='/contact-us' element={<ContactUs />} />
+        <Route exact path='/search' element={<Search />} />
+        <Route exact path='/enquiry-now' element={<EnquiryNow />} />
+        <Route exact path='/partner-register' element={<PartnerRegister />} />
         <Route exact path='/auth' element={<AuthPage />} />
         <Route exact path='/login' element={<Login type='Employee'/>} />
         <Route exact path='/register' element={<Register type='Employee'/>} />

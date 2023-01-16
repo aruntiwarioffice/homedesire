@@ -36,7 +36,7 @@ const Header = () => {
    }
    return (
       <>
-         <header className="site-header-onepage bg-dark-1 is-fixed-">
+         <header className="site-header-onepage bg-dark-1 is-fixed">
             <div className="octf-main-header">
                <div className="octf-area-wrap">
                   <div className="container octf-mainbar-container">
